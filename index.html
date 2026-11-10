@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNOVA — Next-Generation Technology & Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. NAVIGATION BAR
+       - Modern White & Orange Theme
+       - Desktop: Clean horizontal layout with brand, links & CTA
+       - Mobile/Tablet: Hamburger button toggles responsive drawer
+       ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="logo">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo-grad)"/>
+            <path d="M7 9L14 5L21 9V19L14 23L7 19V9Z" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M14 5V14M14 23V14M7 9L14 14M21 9L14 14" stroke="#FFF7ED" stroke-width="1.8"/>
+            <circle cx="14" cy="14" r="2.5" fill="#FFFFFF"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF6B00"/>
+                <stop offset="1" stop-color="#EA580C"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">TECH<span class="text-gradient">NOVA</span></span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#technology" class="nav-link">Technology</a></li>
+          <li class="nav-item"><a href="#featured" class="nav-link">Platform</a></li>
+          <li class="nav-item"><a href="#innovations" class="nav-link">Innovations</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-mobile-cta">
+          <a href="#contact" class="btn btn-primary btn-nav">Get Started</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Header CTA -->
+      <div class="nav-cta-wrapper">
+        <a href="#contact" class="btn btn-primary btn-nav">Get Started</a>
+      </div>
+
+      <!-- Hamburger Menu Toggle Button (Visible on Mobile/Tablet) -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION
+         - Desktop: Two-column layout (Text + Interactive Vector Graphic)
+         - Tablet/Mobile: Stacks content vertically with fluid typography
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Copy & Actions -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Next-Gen Autonomous Intelligence</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting the <span class="text-gradient">Digital Frontier</span> for High-Scale Enterprise
+          </h1>
+
+          <p class="hero-description">
+            Technova engineers robust digital infrastructure, combining sovereign AI intelligence, 
+            elastic cloud fabrics, and quantum-hardened cyber defenses designed for rapid global deployment.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#technology" class="btn btn-primary">
+              <span>Explore Technologies</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#featured" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              <span>Watch Architecture Tour</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Social Proof -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">99.999%</span>
+              <span class="stat-label">SLA Reliability</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">&lt; 5ms</span>
+              <span class="stat-label">Global Latency</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-value">12.8M+</span>
+              <span class="stat-label">Neural Queries/sec</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Technology Visual / Illustration -->
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-glow"></div>
+            
+            <!-- Sleek Technology Illustration SVG (Orange & White Theme) -->
+            <svg class="tech-illustration" viewBox="0 0 540 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(249, 115, 22, 0.12)" stroke-width="1"/>
+                </pattern>
+                <linearGradient id="core-glow" x1="270" y1="120" x2="270" y2="320" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF6B00" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#EA580C" stop-opacity="0.4"/>
+                </linearGradient>
+                <linearGradient id="poly-grad" x1="170" y1="140" x2="370" y2="300" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF"/>
+                  <stop offset="1" stop-color="#FFF7ED"/>
+                </linearGradient>
+                <filter id="shadow-blur" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(249, 115, 22, 0.25)"/>
+                </filter>
+              </defs>
+
+              <rect x="20" y="20" width="500" height="400" rx="20" fill="url(#grid-pattern)"/>
+              
+              <!-- Orbital Energy Rings (Orange Accents) -->
+              <circle cx="270" cy="220" r="160" stroke="#F97316" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="6 6"/>
+              <circle cx="270" cy="220" r="110" stroke="#FF6B00" stroke-opacity="0.35" stroke-width="1.5"/>
+              <circle cx="270" cy="220" r="60" stroke="#EA580C" stroke-opacity="0.5" stroke-width="2"/>
+
+              <!-- Central Processor Block (Crisp White + Orange border) -->
+              <rect x="220" y="170" width="100" height="100" rx="16" fill="url(#poly-grad)" stroke="#FF6B00" stroke-width="2" filter="url(#shadow-blur)"/>
+              <circle cx="270" cy="220" r="26" fill="url(#core-glow)"/>
+              <path d="M260 220L268 228L282 214" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Data Stream Connectors -->
+              <path d="M120 120 L220 190" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4 4" class="anim-pulse"/>
+              <path d="M420 120 L320 190" stroke="#FF6B00" stroke-width="2" stroke-dasharray="4 4" class="anim-pulse"/>
+              <path d="M120 320 L220 250" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M420 320 L320 250" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4"/>
+
+              <!-- Node 1: AI Engine (Crisp White Card with Orange Accent) -->
+              <g class="float-node-1">
+                <rect x="60" y="90" width="124" height="60" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" filter="url(#shadow-blur)"/>
+                <circle cx="85" cy="120" r="12" fill="#FF6B00"/>
+                <path d="M81 120H89M85 116V124" stroke="#FFF" stroke-width="1.5"/>
+                <text x="105" y="117" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">AI CORE</text>
+                <text x="105" y="131" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">ONLINE • 99%</text>
+              </g>
+
+              <!-- Node 2: Cloud Cluster -->
+              <g class="float-node-2">
+                <rect x="356" y="90" width="124" height="60" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" filter="url(#shadow-blur)"/>
+                <circle cx="381" cy="120" r="12" fill="#EA580C"/>
+                <path d="M376 122C376 120 378 117 381 117C384 117 386 120 386 122" stroke="#FFF" stroke-width="1.5"/>
+                <text x="401" y="117" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">CLOUD FABRIC</text>
+                <text x="401" y="131" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">64 REGIONS</text>
+              </g>
+
+              <!-- Node 3: Cyber Shield -->
+              <g class="float-node-3">
+                <rect x="60" y="290" width="134" height="60" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" filter="url(#shadow-blur)"/>
+                <circle cx="85" cy="320" r="12" fill="#FF6B00"/>
+                <path d="M85 314L90 317V322C90 325 85 327 85 327C85 327 80 325 80 322V317L85 314Z" stroke="#FFF" stroke-width="1.2"/>
+                <text x="105" y="317" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">SECURITY</text>
+                <text x="105" y="331" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">ZERO-TRUST</text>
+              </g>
+
+              <!-- Node 4: Ultra Telemetry -->
+              <g class="float-node-4">
+                <rect x="350" y="290" width="134" height="60" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" filter="url(#shadow-blur)"/>
+                <circle cx="375" cy="320" r="12" fill="#EA580C"/>
+                <path d="M371 324L375 317L378 321L382 315" stroke="#FFF" stroke-width="1.5"/>
+                <text x="395" y="317" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">TELEMETRY</text>
+                <text x="395" y="331" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">0.2ms SYNC</text>
+              </g>
+            </svg>
+
+            <!-- Floating Card Status Badge -->
+            <div class="floating-badge">
+              <span class="pulse-indicator"></span>
+              <span>All 6 Global Clusters Operational</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. TECHNOLOGY CATEGORIES SECTION
+         - 4 Categories: AI, Cloud Computing, Web Development, Cybersecurity
+         - Desktop: 4 columns in CSS Grid
+         - Tablet: 2 columns
+         - Mobile: 1 column
+         ======================================================== -->
+    <section class="section tech-section" id="technology">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">CORE DOMAINS</div>
+          <h2 class="section-title">Specialized Engineering Capabilities</h2>
+          <p class="section-subtitle">
+            Engineered from ground up to deliver quantum leaps in computing throughput, seamless availability, and resilient multi-surface defense.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          
+          <!-- Card 1: Artificial Intelligence -->
+          <article class="tech-card">
+            <div class="card-icon-wrapper icon-ai">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                <path d="M9 15h6"/>
+                <path d="M12 9v6"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Artificial Intelligence</h3>
+            <p class="card-desc">
+              Autonomous neural networks, fine-tuned LLM architectures, and real-time edge computer vision models calibrated for microsecond decision loops.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Deep Learning</span>
+              <span class="feature-pill">Transformers</span>
+            </div>
+            <a href="#featured" class="card-link">
+              <span>Explore AI Systems</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 2: Cloud Computing -->
+          <article class="tech-card">
+            <div class="card-icon-wrapper icon-cloud">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Cloud Computing</h3>
+            <p class="card-desc">
+              Elastic multi-region Kubernetes clusters, serverless event mesh, and high-throughput low-cost storage fabrics with automated self-healing.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Serverless</span>
+              <span class="feature-pill">Kubernetes</span>
+            </div>
+            <a href="#featured" class="card-link">
+              <span>Explore Cloud</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 3: Web Development -->
+          <article class="tech-card">
+            <div class="card-icon-wrapper icon-web">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Web Development</h3>
+            <p class="card-desc">
+              Ultra-responsive web applications powered by modern CSS architecture, semantic component design, and progressive edge-rendering pipelines.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Responsive CSS</span>
+              <span class="feature-pill">Web Vitals</span>
+            </div>
+            <a href="#featured" class="card-link">
+              <span>Explore Web</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Card 4: Cybersecurity -->
+          <article class="tech-card">
+            <div class="card-icon-wrapper icon-sec">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Cybersecurity</h3>
+            <p class="card-desc">
+              Zero-Trust identity verification, quantum-resistant TLS encryptions, continuous behavioral anomaly detection, and automated threat mitigation.
+            </p>
+            <div class="card-features">
+              <span class="feature-pill">Zero-Trust</span>
+              <span class="feature-pill">AES-256</span>
+            </div>
+            <a href="#featured" class="card-link">
+              <span>Explore Security</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. FEATURED CONTENT SECTION
+         - Two-column layout on Desktop
+         - Stacks into single column on Tablet & Mobile
+         ======================================================== -->
+    <section class="section featured-section" id="featured">
+      <div class="container featured-container">
+        
+        <!-- Left Column: Rich Vector Illustration / Interactive Preview -->
+        <div class="featured-media">
+          <div class="featured-frame">
+            <div class="featured-glow"></div>
+            
+            <svg class="featured-svg" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="500" height="380" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+              
+              <!-- Dashboard Header bar -->
+              <rect x="0" y="0" width="500" height="44" rx="16" fill="#FFF7ED"/>
+              <circle cx="24" cy="22" r="5" fill="#EF4444"/>
+              <circle cx="40" cy="22" r="5" fill="#F59E0B"/>
+              <circle cx="56" cy="22" r="5" fill="#10B981"/>
+              <text x="80" y="26" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">technova-cluster-alpha // telemetry-v4.1.2</text>
+              
+              <!-- Left Mini Panel: Metrics -->
+              <rect x="24" y="64" width="136" height="88" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-opacity="0.4"/>
+              <text x="36" y="86" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">CLUSTER LOAD</text>
+              <text x="36" y="112" fill="#FF6B00" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">28.4%</text>
+              <text x="36" y="132" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">✓ OPTIMAL STATUS</text>
+              
+              <rect x="24" y="168" width="136" height="88" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-opacity="0.4"/>
+              <text x="36" y="190" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">LATENCY AVG</text>
+              <text x="36" y="216" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">1.84 ms</text>
+              <text x="36" y="236" fill="#FF6B00" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">↑ 34% SPEEDUP</text>
+
+              <rect x="24" y="272" width="136" height="84" rx="8" fill="#FFF7ED" stroke="#F97316" stroke-opacity="0.4"/>
+              <text x="36" y="294" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">EDGE THREATS</text>
+              <text x="36" y="320" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">0 Active</text>
+              <text x="36" y="340" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">100% BLOCKED</text>
+
+              <!-- Right Main Panel: Realtime Chart Graph -->
+              <rect x="180" y="64" width="296" height="292" rx="10" fill="#FAFAFA" stroke="#E2E8F0"/>
+              <text x="200" y="94" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Real-Time Throughput Streaming</text>
+              <text x="200" y="112" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">Aggregated node bandwidth (Gbps)</text>
+
+              <!-- Graph Grid lines -->
+              <line x1="200" y1="140" x2="456" y2="140" stroke="#E2E8F0" stroke-dasharray="3 3"/>
+              <line x1="200" y1="190" x2="456" y2="190" stroke="#E2E8F0" stroke-dasharray="3 3"/>
+              <line x1="200" y1="240" x2="456" y2="240" stroke="#E2E8F0" stroke-dasharray="3 3"/>
+              <line x1="200" y1="290" x2="456" y2="290" stroke="#CBD5E1" stroke-width="1.5"/>
+
+              <!-- Graph Polyline Gradient Wave (Orange & Amber) -->
+              <defs>
+                <linearGradient id="wave-grad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.0"/>
+                </linearGradient>
+              </defs>
+              <polygon points="200,290 200,240 230,220 260,250 290,170 320,190 350,150 380,180 410,130 440,160 456,140 456,290" fill="url(#wave-grad)"/>
+              <path d="M200 240 L230 220 L260 250 L290 170 L320 190 L350 150 L380 180 L410 130 L440 160 L456 140" stroke="#FF6B00" stroke-width="3" stroke-linecap="round"/>
+              
+              <!-- Hotspot point -->
+              <circle cx="410" cy="130" r="5" fill="#FF6B00"/>
+              <circle cx="410" cy="130" r="10" stroke="#FF6B00" stroke-opacity="0.4"/>
+              
+              <!-- Mini Footer status -->
+              <text x="200" y="326" fill="#EA580C" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">SYNC: 144 REGIONAL EDGES AUTO-BALANCED</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Narrative, Key Points & Button -->
+        <div class="featured-content">
+          <div class="section-tag">MISSION-CRITICAL INFRASTRUCTURE</div>
+          <h2 class="featured-heading">Engineered for Uncompromising Speed, Scale & Zero Downtime</h2>
+          <p class="featured-text">
+            Modern enterprise workloads cannot tolerate latency jitter or fragmented tooling. Technova’s unified platform provides full-lifecycle observability, automated traffic steering, and adaptive zero-trust microperimeters built directly into the container fabric.
+          </p>
+
+          <ul class="featured-checklist">
+            <li class="check-item">
+              <span class="check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span><strong>Sub-Millisecond Edge Routing:</strong> Edge nodes intelligently steer traffic around network bottlenecks.</span>
+            </li>
+            <li class="check-item">
+              <span class="check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span><strong>Deterministic Autonomous Scaling:</strong> Workloads burst to handle unpredictable demand surges without cold starts.</span>
+            </li>
+            <li class="check-item">
+              <span class="check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span><strong>Cryptographic Verifiability:</strong> Every workload dispatch is signed and verified via hardware-root cryptographic tokens.</span>
+            </li>
+          </ul>
+
+          <div class="featured-action">
+            <a href="#innovations" class="btn btn-primary">
+              <span>View Full Architecture Specs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. INNOVATION HIGHLIGHTS SECTION
+         - 3 Visually Attractive Cards
+         - Desktop: 3 columns
+         - Tablet: 2 columns / stacked
+         - Mobile: 1 column
+         ======================================================== -->
+    <section class="section innovations-section" id="innovations">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag">R&D SHOWCASE</div>
+          <h2 class="section-title">Emerging Technological Breakthroughs</h2>
+          <p class="section-subtitle">
+            Exploring the next frontier of applied computation, next-generation cryptography, and predictive analytics.
+          </p>
+        </div>
+
+        <div class="innovations-grid">
+          
+          <!-- Innovation Card 1 -->
+          <article class="innovation-card">
+            <div class="innovation-top">
+              <span class="innovation-badge badge-active">Live Production</span>
+              <span class="innovation-id">TECH-01</span>
+            </div>
+            <div class="innovation-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="innovation-title">Autonomous Edge Computing</h3>
+            <p class="innovation-desc">
+              Decentralized AI inference pushed to cellular towers and IoT gateways, removing cloud trip times and operating in disconnected zero-connectivity environments.
+            </p>
+            <div class="innovation-specs">
+              <div class="spec-row">
+                <span class="spec-name">Inference Latency</span>
+                <span class="spec-data">0.42 ms</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-name">Power Efficiency</span>
+                <span class="spec-data">+480%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Innovation Card 2 -->
+          <article class="innovation-card">
+            <div class="innovation-top">
+              <span class="innovation-badge badge-lab">Lab Preview</span>
+              <span class="innovation-id">TECH-02</span>
+            </div>
+            <div class="innovation-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            <h3 class="innovation-title">Quantum-Safe Cryptography</h3>
+            <p class="innovation-desc">
+              Post-quantum lattice-based key encapsulation modules (ML-KEM) and stateless hash signatures designed to shield enterprise secrets against quantum decryption.
+            </p>
+            <div class="innovation-specs">
+              <div class="spec-row">
+                <span class="spec-name">Algorithm</span>
+                <span class="spec-data">Kyber-1024</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-name">NIST Standard</span>
+                <span class="spec-data">FIPS 203 Validated</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Innovation Card 3 -->
+          <article class="innovation-card">
+            <div class="innovation-top">
+              <span class="innovation-badge badge-beta">Beta Deployment</span>
+              <span class="innovation-id">TECH-03</span>
+            </div>
+            <div class="innovation-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+              </svg>
+            </div>
+            <h3 class="innovation-title">Real-Time Neural Analytics</h3>
+            <p class="innovation-desc">
+              Continuous streaming event ingestion analyzing petabytes per second, proactively detecting hardware degradation and cybersecurity threats before impact occurs.
+            </p>
+            <div class="innovation-specs">
+              <div class="spec-row">
+                <span class="spec-name">Throughput</span>
+                <span class="spec-data">25 GB/sec per node</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-name">Pattern Accuracy</span>
+                <span class="spec-data">99.87%</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. CALL-TO-ACTION BANNER (Orange & White Theme)
+         ======================================================== -->
+    <section class="section cta-section" id="about">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Deploy with Technova?</h2>
+            <p class="cta-desc">
+              Join visionary engineering teams migrating their production backbones to our intelligent infrastructure.
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn btn-primary">Start Free Evaluation</a>
+              <a href="#contact" class="btn btn-outline">Schedule Technical Briefing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       7. FOOTER SECTION
+       - Clean White & Charcoal Background with Orange Accents
+       - Desktop: 4 columns
+       - Tablet: 2 columns
+       - Mobile: 1 column
+       ======================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      
+      <!-- Top Grid: 4 Columns on Desktop -->
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <a href="#hero" class="logo">
+            <span class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                <rect width="28" height="28" rx="8" fill="#FF6B00"/>
+                <path d="M7 9L14 5L21 9V19L14 23L7 19V9Z" stroke="#FFFFFF" stroke-width="1.8"/>
+                <path d="M14 5V14M14 23V14M7 9L14 14M21 9L14 14" stroke="#FFF7ED" stroke-width="1.8"/>
+              </svg>
+            </span>
+            <span class="logo-text">TECH<span class="text-gradient">NOVA</span></span>
+          </a>
+          <p class="footer-tagline">
+            Pioneering resilient computing architectures, sovereign AI pipelines, and quantum-defensive infrastructure for future-ready institutions.
+          </p>
+          <div class="footer-contact-info">
+            <p><strong>Headquarters:</strong> 100 Innovation Boulevard, Silicon Corridor</p>
+            <p><strong>Inquiries:</strong> contact@technova-systems.org</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#technology">Technology Domains</a></li>
+            <li><a href="#featured">Platform Architecture</a></li>
+            <li><a href="#innovations">Innovation Labs</a></li>
+            <li><a href="#about">About TECHNOVA</a></li>
+            <li><a href="#contact">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Capabilities -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#technology">Autonomous AI Agents</a></li>
+            <li><a href="#technology">Multi-Cloud Mesh</a></li>
+            <li><a href="#technology">Progressive Web Systems</a></li>
+            <li><a href="#technology">Zero-Trust Perimeter</a></li>
+            <li><a href="#innovations">Post-Quantum Ciphers</a></li>
+            <li><a href="#innovations">Edge Inference Clusters</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Community & Socials -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Connect With Us</h4>
+          <p class="footer-col-desc">Follow our open research and engineering updates across developer channels.</p>
+          
+          <div class="social-links">
+            <!-- GitHub -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (formerly Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <!-- Discord -->
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Discord">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Sub-Footer -->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 <strong>TECHNOVA Technologies Inc.</strong> All rights reserved. Built for College Practical Demonstration.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Protocol</a>
+          <span class="sep">•</span>
+          <a href="#">Terms of Architecture</a>
+          <span class="sep">•</span>
+          <a href="#">Security Disclosure</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
